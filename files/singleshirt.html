@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Home</title>
+</head>
+
+<!-- navbar header section -->
+<header class="header">
+    <div class="logo">
+        <img src="../logo.webp" alt="logo">
+    </div>
+    <i class="fa-sharp fa-solid fa-bars ham"></i>
+    <div class="nav">
+        <ul class="nav-item ">
+            <i class="fa-solid fa-xmark cross"></i>
+            <li><a class="nav-links active" href="home.html">Home</a></li>
+            <li><a class="nav-links" href="shop.html">Shop</a></li>
+            <li><a class="nav-links" href="about.html">About</a></li>
+            <li><a class="nav-links" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- personal shirt info -->
+<section class=" personalShirt">
+    <div class="psimg">
+        <img class="mainimg" src="../procduct/p3.webp" alt="">
+        <div class="imgslider">
+            <img class="smallimg" src="../procduct/p4.jpg" alt="">
+            <br>
+            <img class="smallimg" src="../procduct/p5.jpg" alt="">
+            <br>
+            <img class="smallimg" src="../procduct/p6.jpg" alt="">
+            <br>
+            <img class="smallimg" src="../procduct/p1.webp" alt="">
+        </div>
+    </div>
+
+    <div class="psdes">
+        <h2>Floral Printed Shirts</h2>
+        <p>Addidas</p>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reiciendis ipsum tenetur dolore vel quo, nobis
+            blanditiis. Nostrum esse nesciunt magnam temporibus?</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure doloribus odit nam porro dicta consequatur!
+        </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis ratione nulla dolorem tempora!
+            Assumenda molestiae commodi maiores ullam? Suscipit fugit delectus vel neque eveniet rem vitae dolorum totam
+            quasi officiis perspiciatis repudiandae, officia quae ipsum, sint expedita placeat voluptatem.</p>
+        <br>
+        <button>Add to Cart</button>
+    </div>
+</section>
+<hr>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="row">
+        <div class="col1">
+            <h6>Developer description</h6>
+            <p>
+                <strong>
+                    Dikshant Naudiyal
+                </strong>
+            </p>
+            <p></p>
+        </div>
+        <div class="col2">
+            <h6>Commercial website</h6>
+            <p> Self Made</p>
+            <p>Just For Practise</p>
+        </div>
+        <div class="col3">
+            <h6>My Mega project</h6>
+            <p>Thanks for Visiting</p>
+        </div>
+        <div class="col4">
+            <h6>More About Developer</h6>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing <br> elit. Atque, voluptas. Eligendi pariatur
+                voluptatibus delectus inventore <br> est voluptatum, molestiae veniam, itaque reprehenderit <br> vero
+                repellat et assumenda a, non cum velit. Temporibus?
+            </p>
+        </div>
+    </div>
+    <div class="copyright">
+        <i class="fa-solid fa-copyright"></i>
+        <p>dikshantNaudiyal</p>
+    </div>
+</footer>
+<script>
+let mainimg = document.getElementsByClassName("mainimg")[0]
+let smallimg = document.getElementsByClassName("smallimg")
+
+
+smallimg[0].onclick = function(){
+    mainimg.src= smallimg[0].src
+}
+
+smallimg[1].onclick = function(){
+    mainimg.src= smallimg[1].src
+}
+
+smallimg[2].onclick = function(){
+    mainimg.src= smallimg[2].src
+}
+
+smallimg[3].onclick = function(){
+    mainimg.src= smallimg[3].src
+}
+ 
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>

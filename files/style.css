@@ -1,0 +1,761 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Rubik+Vinyl&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body{
+  /* overflow-x: hidden; */
+}
+
+p {
+  font: icon;
+  font-size: 14px;
+  font-weight: 300;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.Smargin {
+  padding: 50px 0px;
+}
+body{
+  overflow-x: hidden;
+}
+button {
+  padding: 10px 18px;
+  background-color: orange;
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0px;
+  text-decoration: none;
+}
+/* navbar css */
+header {
+  box-shadow: 6px 3px 11px rgba(0, 0, 0, 0.325);
+  padding: 20px 50px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.logo img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+}
+
+.ham {
+  cursor: pointer;
+  opacity: 0;
+position: absolute;
+right: 2rem;
+top: 1.5rem;
+color: white;
+font-size: 25px;
+}
+.cross {
+  cursor: pointer;
+  opacity: 0;
+position: absolute;
+color: black;
+font-size: 25px;
+top: 0;
+left: 1rem;
+}
+
+.nav-item li {
+  margin: 0 25px;
+}
+.nav-links {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links:hover {
+color: #8DCBE6;
+text-shadow: 1px 2px 10px #8DCBE6;
+}
+
+.bg-img {
+  width: 100vw;
+  height: 90vh;
+  margin: 0 0;
+  background: url("https://img.freepik.com/free-photo/full-shot-man-holding-sale-tag_23-2149220638.jpg?w=996&t=st=1673170619~exp=1673171219~hmac=edc6f24c8c46f1da280ca89e39af16919b9106d5b7fd166e2048bd7ecece6830");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 20rem;
+}
+.myFeature {
+  text-align: center;
+  background-color: beige;
+}
+.feature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.featureBox {
+  margin: 20px;
+  box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.457);
+}
+.featureBox:hover {
+  box-shadow: 5px 8px 21px rgba(0, 0, 0, 0.457);
+}
+.featureBox img {
+  width: 200px;
+  height: 180px;
+}
+.featureBox h6 {
+  padding: 8px;
+  color: orangered;
+}
+.feattureAbout {
+  margin: 25px;
+}
+
+.collection {
+  text-align: center;
+}
+.collection button a {
+  text-decoration: none;
+}
+.collection button:hover a {
+  color: white;
+}
+.collection-img {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.star {
+  margin: 6px 0;
+}
+.star i {
+  color: rgb(255, 188, 19);
+}
+.price-cart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  color: orangered;
+}
+.cart {
+  font-size: 20px;
+}
+.cart:hover {
+  color: #42aa66;
+}
+
+.myImg {
+  border: 0.5px solid black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  background-color: beige;
+}
+.myImg:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.27);
+}
+.myImg img {
+  width: 250px;
+  height: 280px;
+  background-color: beige;
+}
+.myImg p {
+  margin: 5px 4px;
+}
+.bg-banner {
+  margin: 10px 0;
+  background: url("https://img.freepik.com/free-vector/purple-aesthetic-flower-background-grid-pattern-design-space-vector_53876-154106.jpg?t=st=1673160735~exp=1673161335~hmac=23c06c537d31b9e304c4abaa507dad2b26710c790686bd5ddfc4fdc531942424");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-banner div {
+  /* opacity: 0; */
+  transition: 0.3s ease;
+}
+.bg-banner:hover div {
+  opacity: 1;
+}
+.bg-banner div h2 {
+  margin: 8px 0;
+  color: white;
+}
+.bg-banner div h4 {
+  color: crimson;
+  margin: 0 7px;
+}
+.collectionAbout {
+  margin: 20px 10px;
+}
+.sale {
+  text-align: center;
+  /* margin: 10px 20px; */
+  background-color: rgba(255, 228, 196, 0.732);
+}
+.saleHead {
+  margin-bottom: 20px;
+}
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.saleBanner:nth-child(1) {
+  background: url("https://img.freepik.com/free-photo/surprised-girl-pink-culottes-posing-with-trolley-full-multi-colored-packages-with-new-clothes_197531-14251.jpg?w=1380&t=st=1673170496~exp=1673171096~hmac=dda48be6516cb6834d9f873b860945446f0ae9cb30f7abaa91d82882d353d228");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48%;
+  background-size: cover;
+  height: 400px;
+  opacity: 0.8;
+}
+.saleBanner:nth-child(2) {
+  background: url("https://img.freepik.com/free-photo/full-shot-man-running-with-shopping-bags_23-2149220643.jpg?w=996&t=st=1673170577~exp=1673171177~hmac=56d87b1fd43e0883558b081ee065469e76a6088b199b7b99cfa278e5b04eaca3");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48%;
+  background-size: cover;
+  height: 400px;
+  opacity: 0.88;
+}
+.saleBanner:nth-child(3) {
+  background: url("https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074075.jpg?w=996&t=st=1673170706~exp=1673171306~hmac=a64022362a9b27bc90e14268918d8686d80ccc81027d0a5df596d2129301cb9d");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48%;
+  background-size: cover;
+  height: 400px;
+  opacity: 0.78;
+}
+.saleBanner:nth-child(4) {
+  background: url("https://img.freepik.com/free-photo/smiling-young-pretty-girl-standing-profile-view-holding-shopping-bags-shoulder-looking-isolated-olive-green-wall-with-copy-space_141793-112922.jpg?w=996&t=st=1673170827~exp=1673171427~hmac=84a51c79f68a7987a722a6673df3a024cab1fcb55baf4edd0a9c0104e7b279f8");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48%;
+  background-size: cover;
+  height: 400px;
+  opacity: 0.89;
+}
+.saleBanner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.saleOffer {
+  opacity: 0;
+}
+.saleOffer h2 {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  box-shadow: 4px -4px 18px #42aa66;
+}
+.saleOffer button {
+  background-color: blanchedalmond;
+}
+.saleOffer button:hover {
+  background-color: lightyellow;
+}
+
+.saleBanner:hover .saleOffer {
+  opacity: 1;
+}
+
+.form {
+  background: url("https://img.freepik.com/free-photo/abstract-purple-smoke-textured-background_23-2148092417.jpg?w=996&t=st=1673172769~exp=1673173369~hmac=1e49aca1a9ccdc8b5ddb96e2841c5301210e3c9a414ddc9c739278930823796d");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  color: white;
+  padding: 50px;
+  height: 25vh;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter-des {
+  width: 60%;
+  margin: 0 10px;
+}
+.newsletter-des p span {
+  color: darkred;
+}
+.newsletter-input {
+  width: 30%;
+}
+.newsletter-input input {
+  width: 60%;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  margin: 0 -5px 0px 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.newsletter-input button {
+  margin: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: gray;
+  color: ghostwhite;
+}
+footer {
+  background-color: white;
+  padding: 50px;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.footer div {
+  margin: 20px 50px;
+}
+.copyright {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.copyright p {
+  font-size: 16px;
+}
+
+/* shop css */
+.shop-headbgimg {
+  background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg?w=1060&t=st=1673274759~exp=1673275359~hmac=f57af69cb5d5f8bb4b6714506bce5702021362d2df996b2554110ab39a5cbbb0");
+  width: 100vw;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 90px;
+}
+.shopend-bg {
+  background: url("https://img.freepik.com/free-vector/banner-with-handrawn-elements-sale_125540-187.jpg?w=1380&t=st=1673276465~exp=1673277065~hmac=731a9dd843daec83dbf19f6d344b859a9916db32e666f2a2f962d6e63c637495");
+  height: 65vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+/* about us css */
+
+.aboutbg-img {
+  background: url("https://img.freepik.com/free-photo/side-view-hand-holding-paper_23-2150062169.jpg?w=1060&t=st=1673277591~exp=1673278191~hmac=6ebd0bb2a3bf5c144061c532c4a2b297c7a852d469db2292c31d9e83c865cece");
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px;
+}
+.aboutbg-img h1 {
+  color: #ec994b;
+  margin-right: 10rem;
+}
+.aboutsec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aboutImg {
+  width: 100%;
+}
+.aboutImg img {
+  width: 100%;
+  height: 460px;
+}
+.aboutImgDes {
+  margin-top: 7rem;
+  padding: 0 50px;
+}
+.aboutImgDes h2 {
+  margin-bottom: 20px;
+}
+/* contact css */
+.myform {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+.myform p {
+  margin: 10px 40px;
+}
+.myform h4 {
+  margin: 5px 25px;
+}
+
+.contactbg-img {
+  background: url("https://img.freepik.com/free-vector/hand-drawn-snowman-character-collection_23-2148755393.jpg?w=1380&t=st=1673358190~exp=1673358790~hmac=a92ee28065aa68c69a9d5388f7d218dc9174974ee6f2828fcb13de42573f19ae");
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px;
+  opacity: 0.85;
+}
+.mainform {
+  display: flex;
+  align-items: flex-start;
+}
+.contactform {
+  width: 65%;
+}
+.contactform input {
+  width: 80%;
+  margin: 10px 25px;
+  padding: 8px;
+  outline: none;
+}
+.contactform textarea {
+  width: 80%;
+  margin: 10px 25px;
+  padding: 8px;
+  outline: none;
+}
+.contactform button {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  color: #42aa66;
+}
+.contactform button:hover {
+  background-color: #42aa66;
+  color: white;
+}
+.founderdes {
+  display: flex;
+  margin-bottom: 50px;
+}
+.founderdes img {
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+}
+.location-des {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px;
+}
+.mapDes {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+}
+.mapDes li {
+  display: flex;
+  margin-top: 20px;
+}
+.mapDes h4 {
+  margin: 12px 0;
+}
+.map {
+  width: 55%;
+}
+.map iframe {
+  width: 100%;
+}
+/* PERSONAL SHIRT INFO */
+.personalShirt {
+  display: flex;
+  padding-top: 10px;
+  padding-right: 80px;
+  padding-left: 150px;
+}
+.psimg img {
+  width: 500px;
+}
+.imgslider {
+  display: flex;
+}
+.imgslider img {
+  width: 100px;
+  margin: 0 5px;
+  border: 1px solid black;
+}
+.psdes {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.psdes button {
+  margin-top: 20px;
+}
+.psdes button:hover {
+  background-color: #f18928;
+  color: white;
+}
+/* RESPONSIVE CSS FOR MEDDIUM SCREEN */
+@media (648px<width<1000px) {
+  .map {
+    width: 50%;
+  }
+  .mapDes {
+    width: 40%;
+    padding-left: 30px;
+  }
+  .contactbg-img {
+    padding: 52px;
+  }
+  .contactbg-img h2 {
+    padding: 52px;
+  }
+  .personalShirt {
+    padding-right: 20px;
+    padding-left: 35px;
+  }
+  .psimg img {
+    width: 350px;
+  }
+  .imgslider img {
+    width: 70px;
+  }
+  .contactform {
+    width: 85%;
+  }
+  .aboutImgDes {
+    margin-top: 4rem;
+    padding: 0 10px;
+  }
+  .aboutbg-img {
+    height: 50vh;
+  }
+  .aboutbg-img h1 {
+    margin-top: 50px;
+  }
+  .shop-headbgimg {
+    height: 41vh;
+    padding: 126px;
+  }
+  .shopend-bg {
+    height: 36vh;
+  }
+  .bg-img {
+    height: 70vh;
+  }
+  .form {
+    height: 32vh;
+  }
+  footer {
+    padding: 20px;
+  }
+  .footer div {
+    margin: 20px;
+  }
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter-des {
+    width: 100%;
+    margin: 10px;
+  }
+  .newsletter-input {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* RESPONSIVE CSS FOR SMALL SCREEN */
+@media (max-width: 648px) {
+   
+  .nav-item {
+    position: absolute;
+    top: 0pc;
+    right: -300px;
+    background-color: white;
+    flex-direction: column;
+    width: 300px;
+    height: 80vh;
+    transition: all .2s ease;
+  }
+  .navItem-come{
+    right: 0px;
+    transition: all .5s ease;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+ 
+  .nav-item li {
+    margin: 31px 7rem;
+  } 
+  .ham {
+    opacity: 1;
+  }
+  .cross {
+    opacity: 1;
+  }
+  .contactbg-img {
+    padding: 51px;
+  }
+  .location-des {
+    display: block;
+    padding: 5px 40px;
+  }
+  .map {
+    width: 100%;
+  }
+  .mapDes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+    margin: 32px 5px;
+  }
+  .personalShirt {
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 38px;
+  }
+  .psimg img {
+    width: 90%;
+  }
+  .imgslider img {
+    width: 15vw;
+    margin-left: 12px;
+  }
+  .psdes {
+    margin-left: -14px;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .founderdes {
+    padding-left: 50px;
+  }
+  .contactform {
+    width: 100%;
+  }
+  .mainform {
+    flex-direction: column;
+  }
+  .aboutsec {
+    grid-template-columns: 1fr;
+  }
+  .aboutImgDes {
+    margin-top: -2rem;
+    padding: 20px;
+  }
+  .aboutbg-img {
+    height: 35vh;
+  }
+  .shop-headbgimg {
+    height: 21vh;
+    padding: 25px;
+  }
+  .shopend-bg {
+    height: 18vh;
+  }
+  .collection button {
+    margin-top: 30px;
+  }
+  .bg-img {
+    height: 65vh;
+  }
+  .collection-img {
+    padding: 0;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .saleBanner:nth-child(1) {
+    width: 100%;
+  }
+  .saleBanner:nth-child(2) {
+    width: 100%;
+  }
+  .saleBanner:nth-child(3) {
+    width: 100%;
+  }
+  .saleBanner:nth-child(4) {
+    width: 100%;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter-des {
+    width: 100%;
+    margin: 30px 10px;
+  }
+  .newsletter-input {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .form {
+    height: 45vh;
+  }
+  .myImg {
+    margin: 10px 0;
+  }
+  footer {
+    padding: 0px;
+  }
+  .row {
+    width: 100vw;
+  }
+  .footer div {
+    margin: 0px;
+    padding: 10px;
+  }
+}
